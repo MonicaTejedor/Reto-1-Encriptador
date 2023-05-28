@@ -1,0 +1,115 @@
+/* CSS Reset */
+
+/* Establecer el valor inicial de todas las propiedades */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Establecer estilos básicos para elementos clave */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* Establecer estilos de listas sin viñetas */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Asegurarse de que los enlaces no tengan estilos por defecto */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Asegurarse de que las imágenes no tengan bordes por defecto */
+img {
+  border-style: none;
+}
+
+/* Asegurarse de que los elementos de formulario se vean iguales en todos los navegadores */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Asegurarse de que los elementos de formulario tengan un aspecto consistente en todos los navegadores */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Asegurarse de que los elementos de formulario se ajusten correctamente a su contenedor */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Asegurarse de que los elementos de formulario sean fáciles de seleccionar */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Asegurarse de que las etiquetas de encabezado tengan un margen inferior consistente */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+}
+body {
+  background-color: #e5e5e5;
+  padding: 0.5rem;
+}
+.seccion-texto-a-encriptar textarea {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #643843;
+  
+}
+
+/* Restablecer el tamaño de fuente raíz */
+html {
+  font-size: 16px;
+}
+/* Restablecer el tamaño de fuente para dispositivos móviles */
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Restablecer el tamaño de fuente para dispositivos pequeños */
+@media (max-width: 479px) {
+  html {
+    font-size: 12px;
+  }
+}
