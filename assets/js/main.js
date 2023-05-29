@@ -42,7 +42,7 @@ checkbox.addEventListener("change", function () {
     body.classList.remove("checked"); // Remueve la clase 'checked' del body
     footer.classList.remove("checked"); // Remueve la clase 'checked' del body
     imagenMunieco.src = "./assets/img/Munieco.png";
-    imagenExclamacion.src = "./assets/img/signo-exclamacion.png";
+    imagenExclamacion.src = "./assets/img/Munieco.png";
   }
 });
 
