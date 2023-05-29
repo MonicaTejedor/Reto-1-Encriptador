@@ -41,8 +41,8 @@ checkbox.addEventListener("change", function () {
     botonCopiar.classList.remove("checked");
     body.classList.remove("checked"); // Remueve la clase 'checked' del body
     footer.classList.remove("checked"); // Remueve la clase 'checked' del body
-    imagenMunieco.src = "../img/Munieco.png";
-    imagenExclamacion.src = "../img/signo-exclamacion.png";
+    imagenMunieco.src = "./assets/img/Munieco.png";
+    imagenExclamacion.src = "../assets/img/signo-exclamacion.png";
   }
 });
 
