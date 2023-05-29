@@ -209,7 +209,7 @@ body.checked {
 .seccion-texto-encriptado.checked {
   background-color: #2f8886; /* Cambia el color de fondo cuando se marca el checkbox */
 }
-.seccion-texto-encriptado.checked {
+.seccion-texto-encriptado.checked , #footer.checked {
   background-color: #2f8886; /* Cambia el color de fondo cuando se marca el checkbox */
 }
 .boton-encriptar.checked {
@@ -379,15 +379,18 @@ body.checked {
 footer {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 3rem;
-  padding-bottom: 1rem;
+  width: 96%;
+  padding: 1rem;
+  margin: 2rem 2%;
+  background-color: #ffffff;
+  border-radius: 32px;
 }
 footer p {
   text-align: center;
   color: #643843;
-  font-size: medium;
+  font-size: large;
   font-weight: 700;
+  line-height: 140%;
 }
 footer ul {
   display: flex;
@@ -396,7 +399,7 @@ footer ul {
   padding-top: 1rem;
 }
 li img {
-  width: 3rem;
+  width: 2rem;
   margin-left: 0.8rem;
 }
 
