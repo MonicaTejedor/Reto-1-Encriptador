@@ -4,17 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <title>Encriptador de texto</title>
   </head>
   <body>
-    <section class="seccion-texto-a-encriptar">
-      <div class="boton-modo-oscuro"></div>
-      <div class="texto-a-encriptar">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-      </div>
-      <div class="contenedor-mensaje"></div>
-      <div class="contenedor-botones"></div>
-    </section>
+    <div class="contenido-encriptador">
+      <section class="seccion-texto-a-encriptar">
+        <div class="boton-modo-oscuro">
+          <!--Botón modo escuro-->
+          <input type="checkbox" id="toggle_checkbox" />
+          <label for="toggle_checkbox">
+            <div id="star">
+              <div class="star" id="star-1">★</div>
+              <div class="star" id="star-2">★</div>
+            </div>
+            <div id="moon"></div>
+          </label>
+          <!--fin botón modo escuro-->
+        </div>
+
+        <div class="texto-a-encriptar">
+          <textarea
+            name=""
+            id="texto-de-entrada"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+        </div>
+        <div class="contenedor-mensaje" id="contenedor-mensaje">
+          <img
+            class="img-signo-exclamacion"
+            id="img-signo-exclamacion"
+            src="/assets/img/signo-exclamacion.png"
+            alt="Imagen signo de exclamación"
+          />
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="contenedor-botones">
+          <button class="boton-encriptar" id="boton-encriptar" onclick="validarTexto()">
+            Encriptar
+          </button>
+          <button class="boton-desencriptar" id="boton-desencriptar">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <section class="seccion-texto-encriptado" id="seccion-texto-encriptado">
+        <img
+          class="img-munieco"
+          id="img-munieco"
+          src="/assets/img/Munieco.png"
+          alt="imagen de un hombre animado de rodillas mirando por una lupa"
+        />
+        <p>Ningún mensaje fue encontrado</p>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      </section>
+    </div>
+    <footer id="footer">
+      <p>Desarrollado por: Mónica Tejedor</p>
+      <p>Desarrolladora Full Stack</p>
+      <p>Colombia</p>
+      <p>2023</p>
+      <ul>
+        <li>
+          <a href="https://github.com/MonicaTejedor" target="_blank">
+            <img src="/assets/img/github.png" alt="github" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/monica-andrea-tejedor-parrado/"
+            target="_blank"
+          >
+            <img src="/assets/img/linkedin.png" alt="linkedin" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:monicatejedorparrado@gmail.com?" target="_blank">
+            <img src="/assets/img/gmail.png" alt="gmail" />
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
+  <script src="/assets/js/main.js"></script>
 </html>
