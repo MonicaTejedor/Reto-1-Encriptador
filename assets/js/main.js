@@ -27,9 +27,9 @@ checkbox.addEventListener("change", function () {
     textoSalida.classList.add("checked");
     body.classList.add("checked"); // Agrega la clase 'checked' al body
     footer.classList.add("checked"); // Agrega la clase 'checked' al body
-    imagenMunieco.src = "assets/img/munieco-oscuro.png";
+    imagenMunieco.src = "../img/munieco-oscuro.png";
     setTimeout(function () {
-      imagenExclamacion.src = "assets/img/signo-exclamacion-oscuro.png";
+      imagenExclamacion.src = "../img/signo-exclamacion-oscuro.png";
     }, 150);
   } else {
     seccionTextoEncriptado.classList.remove("checked");
@@ -41,8 +41,8 @@ checkbox.addEventListener("change", function () {
     botonCopiar.classList.remove("checked");
     body.classList.remove("checked"); // Remueve la clase 'checked' del body
     footer.classList.remove("checked"); // Remueve la clase 'checked' del body
-    imagenMunieco.src = "assets/img/Munieco.png";
-    imagenExclamacion.src = "assets/img/signo-exclamacion.png";
+    imagenMunieco.src = "../img/Munieco.png";
+    imagenExclamacion.src = "../img/signo-exclamacion.png";
   }
 });
 
